@@ -1,3 +1,5 @@
+#Calculate |SAW|
+
 import random
 import numpy as np
 d = 2 #number of dimensions
