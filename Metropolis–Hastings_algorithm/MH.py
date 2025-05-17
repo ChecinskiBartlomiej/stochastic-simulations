@@ -3,16 +3,16 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 b = 1
-m = 0
-v = 1
+m = 0 #mean of normal distribution
+v = 1 #standard deviation of normal distribution
 
-def gestosc_normalna(x):
+def normal_density(x):
     c = math.sqrt(2*math.pi)*v #norming constant
     w = -(x-m)**2/(2*v**2)     #exponent
     return math.exp(w)/c
 
 def a(x, y):
-    return min(1, gestosc_normalna(y)/gestosc_normalna(x))
+    return min(1, normal_density(y)/normal_density(x))
 
 def MH_step(x):
     y = random.uniform(x-b, x+b)
