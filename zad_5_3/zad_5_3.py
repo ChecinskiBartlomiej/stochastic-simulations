@@ -65,4 +65,4 @@ print(f"Estimated N: {estimate_N(X)}")
 
 end = time.time()
 
-print(f"Czas wykonania: {end - start:.4f} sekund")
+print(f"Elapsed time: {end - start:.4f} time")
