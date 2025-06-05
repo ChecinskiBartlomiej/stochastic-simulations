@@ -1,5 +1,3 @@
-#Since our process is markov chain and has stationary distribution I can use only one trajectory
-
 import numpy as np
 import math
 import time
